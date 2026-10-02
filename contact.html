@@ -37,6 +37,9 @@
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </div>
     
@@ -95,9 +98,7 @@
                 </li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+            
         </div>
     </nav>
     
@@ -117,22 +118,79 @@
         <div class="container service-detail-container">
             <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Contact Us in Mumbai" class="service-main-img">
             
-            <div class="service-content-box">
-                <h2>Get In Touch With Us</h2>
-                <p>At Dsign Interior, we specialize in delivering luxurious and highly functional <strong>Contact Us</strong> tailored to your unique lifestyle and preferences. Operating since 2007 in Mumbai, our expert designers blend aesthetics with practicality to create spaces that inspire.</p>
-                <br>
-                <h3>Why Choose Our Services?</h3>
-                <ul>
-                    <li>Customized design layouts focusing on space optimization.</li>
-                    <li>Premium quality materials and superior craftsmanship.</li>
-                    <li>Seamless turnkey execution from concept to completion.</li>
-                    <li>Timely delivery with complete project management.</li>
-                </ul>
-                <p>Whether you are looking for a complete overhaul or specific aesthetic enhancements, our Contact Us services ensure an outcome that exudes luxury and comfort.</p>
+            <!-- Official Complete Contact Information Section -->
+            <div class="service-content-box contact-cards-container">
+                <div class="section-kicker">01 / DIRECT CONTACT</div>
+                <h2>Contact Information</h2>
+                <p>Have an upcoming residential or commercial interior project? Connect directly with our design studio in Navi Mumbai. Our architects and interior specialists are ready to bring your vision to life.</p>
+                
+                <div class="contact-info-grid">
+                    <!-- Office Address Card -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Office Address</h4>
+                            <p>AN ORCHID SHOP NO 01, PLOT NO 120/121, SEC-27, SEAWOODS, NERUL (EAST), NAVI MUMBAI - 400706</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=AN+ORCHID+SHOP+NO+01%2C+PLOT+NO+120%2F121%2C+SEC-27%2C+SEAWOODS%2C+NERUL+%28EAST%29%2C+NAVI+MUMBAI+-+400706" target="_blank" rel="noopener noreferrer" class="contact-card-link" aria-label="View Dsign Interior location on Google Maps">
+                                <i class="fas fa-directions"></i> View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919716786164" class="contact-value-link" aria-label="Call Dsign Interior at +91 9716786164">+91 9716786164</a></p>
+                            <span class="contact-subtext">Mon – Sat: 10:00 AM – 7:00 PM</span>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@dsigninterior.in" class="contact-value-link" aria-label="Email Dsign Interior at info@dsigninterior.in">info@dsigninterior.in</a></p>
+                            <span class="contact-subtext">Dedicated project consultation team</span>
+                        </div>
+                    </div>
+
+                    <!-- Website Card -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Website</h4>
+                            <p><a href="https://dsigninterior.in" target="_blank" rel="noopener noreferrer" class="contact-value-link" aria-label="Visit Dsign Interior official website">https://dsigninterior.in</a></p>
+                            <span class="contact-subtext">Official Portfolio & Turnkey Services</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-quick-actions">
+                    <a href="tel:+919716786164" class="btn btn-primary" aria-label="Call Dsign Interior">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> Call +91 9716786164
+                    </a>
+                    <a href="https://wa.me/919716786164?text=Hello%20Dsign%20Interior,%20I%20would%20like%20to%20get%20a%20quote%20for%20my%20interior%20project." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Contact Dsign Interior on WhatsApp">
+                        <i class="fab fa-whatsapp" style="margin-right: 8px; color: #25D366;"></i> WhatsApp Us
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=AN+ORCHID+SHOP+NO+01%2C+PLOT+NO+120%2F121%2C+SEC-27%2C+SEAWOODS%2C+NERUL+%28EAST%29%2C+NAVI+MUMBAI+-+400706" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Dsign Interior location on Google Maps">
+                        <i class="fas fa-map-marked-alt" style="margin-right: 8px;"></i> View on Google Maps
+                    </a>
+                </div>
             </div>
 
             <div class="enquiry-form-box">
-                <h2 style="text-align: center; color: var(--champagne-gold); margin-bottom: 30px;">Request a Quote</h2>
+                <h2 style="text-align: center; color: var(--color-primary); margin-bottom: 30px;">Request a Quote</h2>
                 <form id="enquiryForm">
                     <div class="grid-2" style="gap: 20px;">
                         <div class="form-group">
@@ -200,12 +258,14 @@
             </ul>
         </div>
         <div class="footer-col">
-            <h3>Contact Us</h3>
+            <h3>Visit Our Office</h3>
             <ul class="contact-info">
-                <li><i class="fas fa-phone-alt"></i> +91 9716786164</li>
+                <li><i class="fas fa-map-marker-alt"></i> AN ORCHID SHOP NO 01, PLOT NO 120/121, SEC-27, SEAWOODS, NERUL (EAST), NAVI MUMBAI - 400706</li>
+                <li><i class="fas fa-directions"></i> <a href="https://www.google.com/maps/search/?api=1&query=AN+ORCHID+SHOP+NO+01%2C+PLOT+NO+120%2F121%2C+SEC-27%2C+SEAWOODS%2C+NERUL+%28EAST%29%2C+NAVI+MUMBAI+-+400706" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-size: 0.85rem;" aria-label="View Dsign Interior location on Google Maps">View on Google Maps</a></li>
+                <li><i class="fas fa-phone-alt"></i> <a href="tel:+919716786164">+91 9716786164</a></li>
                 <li><i class="fas fa-envelope"></i> <a href="mailto:info@dsigninterior.in">info@dsigninterior.in</a></li>
-                <li><i class="fab fa-whatsapp"></i> +91 9716786164</li>
-                <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                <li><i class="fas fa-globe"></i> <a href="https://dsigninterior.in" target="_blank" rel="noopener noreferrer">https://dsigninterior.in</a></li>
+                <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919716786164">+91 9716786164</a></li>
             </ul>
             <div class="legal-links">
                 <a href="privacy-policy.html">Privacy Policy</a>
@@ -219,8 +279,8 @@
 </footer>
 
 <div class="floating-buttons">
-    <a href="tel:+919716786164" class="float-call" title="Call Us"><i class="fas fa-phone-alt"></i></a>
-    <a href="https://wa.me/919716786164?text=Hello%20Dsign%20Interior,%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20interior%20design%20services." target="_blank" class="float-wa" title="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919716786164" class="float-call" title="Call Us" aria-label="Call Dsign Interior"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://wa.me/919716786164?text=Hello%20Dsign%20Interior,%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20interior%20design%20services." target="_blank" class="float-wa" title="WhatsApp Us" aria-label="Contact Dsign Interior on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 <div class="sticky-social">
