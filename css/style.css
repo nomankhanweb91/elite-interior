@@ -308,6 +308,10 @@ img { max-width: 100%; height: auto; display: block; border-radius: var(--radius
 .main-nav { padding: 0; position: relative; background: #FFFFFF; }
 .nav-container { display: flex; justify-content: center; align-items: center; min-height: 60px; }
 .nav-list { display: flex; gap: 25px; transition: all 0.3s ease; }
+/* Mobile Drawer Header: Strictly hidden in desktop navigation bar */
+.mobile-drawer-header {
+    display: none !important;
+}
 .nav-item { position: relative; padding: 15px 0; }
 .nav-link { 
     font-size: 12px; 
@@ -984,21 +988,18 @@ img { max-width: 100%; height: auto; display: block; border-radius: var(--radius
     display: inline-block;
     text-wrap: balance;
 }
-.section-header h2::after { 
-    content: ''; 
-    position: absolute; 
-    bottom: -10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 60px; 
-    height: 3px; 
-    background: var(--color-primary); 
-    border-radius: 2px;
+/* Blue decorative section lines removed as requested */
+.section-header h2::after,
+.section-kicker::after,
+.section-kicker::before,
+.about-content h2::after { 
+    display: none !important;
+    content: none !important;
 }
 .section-header p { 
     color: var(--text-muted); 
     max-width: 700px; 
-    margin: 25px auto 0; 
+    margin: 15px auto 0; 
     font-size: 1.1rem; 
     line-height: 1.8;
     text-wrap: balance;
